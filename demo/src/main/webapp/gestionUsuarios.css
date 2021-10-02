@@ -1,0 +1,96 @@
+@charset "ISO-8859-1";
+body{
+	height: 30%;
+	width: 30%;
+	margin-top: 50px;
+	background-image: url("background_login.jpg");
+	background-repeat: no-repeat;
+	background-size:70%;
+	background-position: center;
+
+}
+
+#logo{
+	width: 200px;
+	position: left;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	margin-left: 1000px;
+
+}
+form{
+width:1000px;
+height: 800px;
+margin:auto;
+padding: 30px 20px;
+box-sizing: border-box;
+border-radius:7px;
+border: solid black 1px;
+background: white;
+
+}
+ input{
+	width: 100%;
+	margin-bottom:5px;
+	padding:7px;
+	box-sizing: border-box;
+	font-size:17px;
+	border: solid black 1px;
+	border-radius:7px;
+	margin-left: 5px;
+	margin-right: 5 px;
+}
+
+ label{
+	width: 100%;
+	margin-bottom:5px;
+	padding:7px;
+	box-sizing: border-box;
+	font-size:17px;
+	font: bold 20px verdana, sans-serif;
+	margin-left: 5px;
+	margin-right: 5 px;
+	
+}
+
+
+
+#mail{
+	width: 300px;
+	margin-bottom:10px;
+	padding:7px;
+	box-sizing: border-box;
+	font-size:17px;
+	border: solid black 1px;
+}
+
+
+#boton{
+width: 100px;
+background:#339BFF;
+color: white;
+padding:5;
+margin: 100px;
+margin-left: 50px;
+margin-right: 50 px;
+}
+
+#boton:hover{
+cursor:pointer;
+background:orange;
+color:white;
+}
+h1{
+font: bold 20px verdana, sans-serif;
+width:50 px;
+height: 50 px;
+margin-bottom: 0px;
+margin-top: 100px;
+text-align: left;
+background-color: #339BFF;
+color: white;
+padding:5px;
+box-sizing: border-box;
+border-radius:7px;
+
+}

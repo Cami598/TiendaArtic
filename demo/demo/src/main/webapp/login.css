@@ -1,0 +1,50 @@
+@charset "ISO-8859-1";
+
+body{
+	
+	
+	margin-top: 12%;
+	background-image: url("background_login.jpg");
+	background-repeat: no-repeat;
+	background-size:60%;
+	background-position: center;
+	background-color: rgba (0,0,0,0.6);
+}
+#formulario{
+width:100%;
+text-align:center;
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+#formulario .contenedor{
+width:40%;
+padding: 15px 15px 15px 15px;
+align-items: center;
+border: solid grey 2px;
+border-radius:7px;
+}
+#formulario .contenedor img{
+width: 200px;
+height:200px;
+opacity:100;
+}
+
+#btn_Enviar{
+width:100px;
+background:#339BFF;
+color: white;
+padding:5;
+margin: 20px;
+margin-left: 50px;
+margin-right: 50 px;
+border-radius:7px;
+}
+
+#btn_Enviar:hover{
+cursor:pointer;
+background:orange;
+color:white;
+border-radius:7px;
+}

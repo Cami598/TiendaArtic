@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CRUD CLIENTES</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="cliente.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="cliente.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+   <H1><i class="fa fa-user"></i>Cliente</h1>
+      <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
+      <div>
+         <img id="logo" src="_logo_Artic.jpg"/>
+      </div>
+
+<div>
+<form id="formulario">
+   <div class="contenedor">
+<table>
+<tr> 
+<td><label>Cedula Cliente:</label></td>
+ <td>
+  <!--html->JS obtiene los valores-->
+  <input id="cedula_cliente" type="text" value=""> 
+  </td> 
+ <td> <input type="button" value="Buscar" id="buscarC"></td> 
+  </tr>
+ <tr>
+  <td><label>Nombre del Cliente:</label></td> 
+ <td><input id="nombre_cliente" type="text" value=""></td>
+   </tr>
+     <tr>
+	   <td><label>Dirección:</label></td>
+	   <td><input id="direccion_cliente" type="text" value=""></td>
+   </tr>
+    <tr>
+	   <td><label>Email:</label></td>
+	   <td><input id="email_cliente" type="text" value=""></td>
+   </tr>
+    <tr>
+	   <td><label>Telefono:</label></td>
+	   <td><input id="telefono_cliente" type="text" value=""></td>
+   </tr>
+<tr> 
+<td><input type="button" value="Agregar" id="agregarC"></td> 
+<td><input type="button" value="Eliminar" id="eliminarC"></td>
+ <td><input type="button" value="Actualizar" id="actualizarC"></td> 
+ <td><input type="button" value="Listar" id="listarC"></td> 
+</tr>
+</table> 
+</div>
+</form> 
+</div>
+
+ <!-- INFO JSON-->
+<div id="mensaje">
+ </div>
+
+
+</body>
+</html>

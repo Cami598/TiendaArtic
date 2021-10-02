@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CRUD proveedores</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="proveedor.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="proveedor.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1><i class="fa fa-user"></i>Proveedor</h1>
+      <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i>
+      <div>
+         <img id="logo" src="_logo_Artic.jpg"/>
+      </div>
+
+<div>
+<form id="formulario">
+   <div class="contenedor">
+<table>
+<tr> 
+<td><label>Nit Proveedor:</label></td>
+ <td>
+  <!--html->JS obtiene los valores-->
+  <input id="nit" type="text" value=""> 
+  </td> 
+ <td> <input type="button" value="Buscar" id="buscarP"></td> 
+  </tr>
+ <tr>
+  <td><label>Nombre del Proveedor:</label></td> 
+ <td><input id="nombre_proveedor" type="text" value=""></td>
+   </tr>
+     <tr>
+	   <td><label>Dirección:</label></td>
+	   <td><input id="direccion_proveedor" type="text" value=""></td>
+   </tr>
+    <tr>
+	   <td><label>Telefono:</label></td>
+	   <td><input id="telefono_proveedor" type="text" value=""></td>
+   </tr>
+    <tr>
+	   <td><label>Ciudad:</label></td>
+	   <td><input id="ciudad_proveedor" type="text" value=""></td>
+   </tr>
+<tr> 
+<td><input type="button" value="Agregar" id="agregarP"></td> 
+<td><input type="button" value="Eliminar" id="eliminarP"></td>
+ <td><input type="button" value="Actualizar" id="actualizarP"></td> 
+ <td><input type="button" value="Listar" id="listarP"></td> 
+</tr>
+</table> 
+</div>
+</form> 
+</div>
+
+ <!-- INFO JSON-->
+<div id="mensaje">
+ </div>
+</body>
+</html>
