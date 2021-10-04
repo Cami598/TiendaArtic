@@ -42,7 +42,10 @@ main{background-image: url("background_login.jpg");
     border:none;
     font: bold 20px AvantGarde Mt bt, sans-serif;
     font-size:12pt;
+    padding:15px 50px 15px 50px;
+    text-decoration: none;
 }
+
 
 
 #usuario_boton:hover{
@@ -107,6 +110,8 @@ h2{
     font: bold 20px AvantGarde Mt bt, sans-serif;
     font-size:12pt;
     text-align: center;
+    text-decoration: none;
+       
 }
 #cliente_boton:hover{
 	cursor:pointer;
@@ -115,7 +120,7 @@ h2{
 }
 #proveedor_boton{
 	width:400px;
-	height:50px;
+	
 	margin:auto;
 	border-radius:7px;
 	background:rgba(0,0,0,0.4);
@@ -124,6 +129,8 @@ h2{
     font: bold 20px AvantGarde Mt bt, sans-serif;
     font-size:12pt;
     text-align: center;
+    padding: 15px 0px 15px 0px;
+    text-decoration: none;
 }
 #proveedor_boton:hover{
 	cursor:pointer;
@@ -141,6 +148,7 @@ h2{
     font: bold 20px AvantGarde Mt bt, sans-serif;
     font-size:12pt;
     text-align: center;
+    text-decoration: none;
 }
 #producto_boton:hover{
 	cursor:pointer;
@@ -158,6 +166,7 @@ h2{
 	font: bold 20px AvantGarde Mt bt, sans-serif;
 	font-size:12pt;
 	text-align: center;
+	text-decoration: none;
 }
 #venta_boton:hover{
 	cursor:pointer;
@@ -175,6 +184,7 @@ h2{
     font: bold 20px AvantGarde Mt bt, sans-serif;
     font-size:12pt;
     text-align: center;
+    text-decoration: none;
 }
 #reporte_boton:hover{
 	cursor:pointer;
@@ -194,6 +204,7 @@ h2{
     font: bold 20px AvantGarde Mt bt, sans-serif;
     font-size:12pt;
     text-align: center;
+    text-decoration: none;
 }
 #salir_boton:hover{
 	cursor:pointer;
