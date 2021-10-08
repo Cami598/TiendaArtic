@@ -24,8 +24,6 @@ padding: 15px 15px 15px 15px;
 align-items: center;
 border: solid grey 2px;
 border-radius:7px;
-background: white;
-opacity: 0;
 }
 #formulario .contenedor img{
 width: 200px;
@@ -49,7 +47,4 @@ cursor:pointer;
 background:orange;
 color:white;
 border-radius:7px;
-}
-#salida{
-color: red;
 }

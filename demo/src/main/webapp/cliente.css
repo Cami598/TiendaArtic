@@ -1,45 +1,103 @@
 @charset "ISO-8859-1";
 body{
-	margin-top: 12%;
+	margin-image:auto;
 	background-image: url("background_login.jpg");
 	background-repeat: no-repeat;
-	background-size:60%;
+	background-size:900px;
 	background-position: center;
-	background-color: rgba (0,0,0,0.6);
+}
+
+header { /*esta es la franja que contiene el menu de enlaces horizontal*/
+	width: 100%; /*su lago es el 100% de la pantalla*/
+	height: 40px; /*su alto es de 40 pixeles*/
+	background: white; /*color de la letra*/
+	border: solid grey 1px; /*asigna un borde al contenedor o header, color y grosor*/
+
+	position: fixed; /*fija el header a la pagina*/
+	top: 70px; /*ubica el header a una distancia de 50 px de la parte superior del navegador*/
+	left: 0; /*orientación horizontal en la izuierda a 0 pixeles*/
+	z-index: 100; /* header hacia el frente de la pagina*/
+}
+
+.titulo{ /*contenedor del titulo y del h1*/
+    font: bold 12px AvantGarde Mt bt, sans-serif; /*fuente del texto que se ubique en este contenedor*/
+    background:white; /*color del fondo del contenedor*/
+    color:grey;  /*color de la letra o fuente*/
+    height: 60px; /*alto del contenedor en pixeles*/
+    
+    background-color:#f7e227; /*fondo del contenedor*/
+}
+h1{ /* etiqueta de titulo 1*/
+    margin-left:20px; /*margen desde el borde izquierdo del navegador hasta la etiqueta h1 */
+    padding:10px; /*margen interna de la etiqueta o del elemento*/
+   
+}
+
+.contenedor{/*contenedor del navegador o enlaces a otras paginas*/
+	width: 98%; /*largo del contenedor con respecto al navegador*/
+	margin: auto; /*margen automatica...centra con respecto al area que ocupe*/
+	}
+
+
+
+.menu {/*contenedor de las etiquetas a que realizan los enlaces*/
+	position: absolute; /**/
+	top: 50px; /*distancia en pixeles que se le asigna al contenedor con respecto a la parte superior del navegador*/
+	left: 0;/*distancia en pixeles que se le asigna al contenedor con respecto a la parte izquierda del navegador*/
+	width: 100%; /*Largo del contenedor con respecto al navegador*/
+	height: 100vh;/* creo que fija al elemento con respecto a la visial en el navegador*/
+	background: white; /*color de fondo del contenedor menu*/
+	transition: all 0.5s; /*asigna el tiempo de movimiento en segundos, no tengo presente bien si esta relacionado al desplegable responsive que no usaremos*/
+	transform: translatex(-100%);/* crea que es la posición inicial del menú desplegable (no esta en uso creo)*/
+
+    position: static; /*estatica, el contenedor conservara su posicion asignada no se oculta, no desaparece*/
+	width: auto; /*centra automaticamente en el largo*/
+	height: auto; /*centra automaticamente en el alto*/
+	transform: translateX(0%); /*realiza una transformacion en el eje x de 0, matiene su posicion horizontal*/
+	float: left; /*Mantiene su posicion a la izquierda del contenedor menu*/
+	display: flex; /*permite que los elementos se organicen flexiblemente o ocupen su posicion uno junto al otro*/
+    margin-left:20px;/*margen del contenedor con respecto al borde izquierdo del navegador*/
+}
+
+.menu a { /* estilo para la etiqueta a contenida en el menu*/
+	display: block; /* asigna caracteristicas de bloque a los elementos contenidos*/
+	color: #1698A4; /*color de la letra o fuente*/
+
+	text-decoration: none; /*quita el delineado que lleva los lonks por defecto*/
+	padding: 10px 10px 10px 10px; /*margen interna, es como el perimetro que demarca el espacio del elemento con respecto a otro dentro del contenedor*/
+    font: bold 15px AvantGarde Mt bt, sans-serif; /*Tipo de letra que manejara las etiquetas a*/
+	border-bottom: 1px solid rgba(255,255,255,0.3); /*Color de composicion rgb e intensidad del 30% del color o (0.3) no recuerdo donde se regleja este estilo*/
 
 }
 
-#logo{
-	width: 200px;
+
+.menu a:hover { /* estilos que recibe la etiqueta a al pasar el cursor sobre las etiquetas a*/
+    background-color:#f7e227; /*fondo de la etiqueta a */
+ 	opacity:0.6; /*opacidad dada al color anterior 60%*/
+}
+
+h2{
+font: bold 30px verdana, sans-serif;
+width:50 px;
+height: 20 px;
+margin-bottom: 0px;
+margin-top: 0px;
+text-align: left;
+color:#1698A4;
+background-color: white;
+padding:5px;
+box-sizing: border-box;
+border-radius:7px;
+
+}
+img{
+   width: 200px;
 	position: left;
 	margin-bottom: 10px;
 	margin-top: 0px;
 	margin-left: 1000px;
 
-}#formulario{
-    width:100%;
-    text-align:center;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-   
-    }
-    
-    #formulario .contenedor{
-    width:80%;
-    padding: 15px 15px 15px 15px;
-    align-items: center;
-    border: solid grey 2px;
-    border-radius:7px;
-    }
-    
-    
-    #formulario .contenedor img{
-    width: 200px;
-    height:300px;
-    opacity:100;
-    }
-
+}
 
  input{
 	width: 100%;
@@ -53,15 +111,61 @@ body{
 	margin-right: 5 px;
 }
 
+
+#contenedor{
+    width:98%;
+    margin-top:140px;
+    padding: 15px 15px 15px 15px;
+    align-items: center;
+    border: solid grey 0px;
+    border-radius:7px;
+     display:flex;
+    flex-wrap:wrap;
+   	 
+  
+    }
+    
+    #contenedorTabla{
+    align-items:center;
+    width: 40%;
+    background-color:white;
+    width:50%;
+    margin-top:140px;
+    padding: 15px 15px 15px 15px;
+    align-items: center;
+    border: solid rgb(192, 192, 192) 2px;
+    border-radius:7px;
+     justify-content:center;
+    }
+
+#formulario{
+    width:100%;
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+   
+   
+    }
+    
+table{
+	margin:auto;
+	background-color:white;
+	
+
+	
+}
+
  label{
 	width: 100%;
 	margin-bottom:5px;
 	padding:7px;
 	box-sizing: border-box;
-	font-size:17px;
-	font: bold 20px verdana, sans-serif;
+	font-size:14px;
+	font: bold 14px verdana, sans-serif;
 	margin-left: 5px;
 	margin-right: 5 px;
+	color:grey;
 	
 
 }
@@ -71,12 +175,9 @@ width: 100px;
 background:#339BFF;
 color: white;
 padding:5;
-margin: 100px;
-margin-left: 50px;
-margin-right: 50 px;
+margin:auto;
 border-radius:7px;
 }
-
 #agregarC:hover{
     cursor:pointer;
     background:orange;
@@ -108,19 +209,3 @@ border-radius:7px;
              border-radius:7px;
                 }
 
-  
-
-h1{
-font: bold 20px verdana, sans-serif;
-width:50 px;
-height: 50 px;
-margin-bottom: 0px;
-margin-top: 0px;
-text-align: left;
-background-color: #339BFF;
-color: white;
-padding:5px;
-box-sizing: border-box;
-border-radius:7px;
-
-}
